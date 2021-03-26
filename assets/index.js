@@ -1,4 +1,4 @@
-const SERVER_ADDRESS = 'https://cors-anywhere.herokuapp.com/http://168.138.40.63:3000'
+const SERVER_ADDRESS = 'http://168.138.40.63:3000'
 document.getElementById("short-url-form").addEventListener("submit", (event) => {
   url = document.querySelector('#url').value;
 
