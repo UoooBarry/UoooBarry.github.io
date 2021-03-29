@@ -15,10 +15,16 @@ document.getElementById("short-url-form").addEventListener("submit", (event) => 
     .then((response) => {
       response.json()
               .then((content) => {
-                const uuid = content.payload.uuid
-                const redirectUrl = `${SERVER_ADDRESS}/redirect/${uuid}`
-                document.querySelector('#result').innerHTML = redirectUrl
-                document.querySelector('#result').href = redirectUrl 
+                const errors = content.errors
+                if(!errors){
+                  const uuid = content.payload.uuid
+                  const redirectUrl = `${SERVER_ADDRESS}/redirect/${uuid}`
+                  document.querySelector('#result').innerHTML = redirectUrl
+                  document.querySelector('#result').href = redirectUrl 
+                }else{
+                  document.querySelector('#result').innerHTML = 'Error happen when shoranting your url';
+                  document.querySelector('#result').style.color = 'red';
+                }
               })
     })
     .catch((err) => {
