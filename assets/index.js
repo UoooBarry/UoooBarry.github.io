@@ -15,8 +15,7 @@ document.getElementById("short-url-form").addEventListener("submit", (event) => 
     .then((response) => {
       response.json()
               .then((content) => {
-                const errors = content.errors
-                if(!errors){
+                if(content.payload){
                   const uuid = content.payload.uuid
                   const redirectUrl = `${SERVER_ADDRESS}/redirect/${uuid}`
                   document.querySelector('#result').innerHTML = redirectUrl
