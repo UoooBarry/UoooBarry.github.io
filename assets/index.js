@@ -3,7 +3,6 @@ document.getElementById("short-url-form").addEventListener("submit", (event) => 
   url = document.querySelector('#url').value;
 
   if(url){
-    console.log(url);
     fetch(`${SERVER_ADDRESS}/api/v0/urls/`, {
       method: 'POST',
       headers: {
@@ -27,9 +26,7 @@ document.getElementById("short-url-form").addEventListener("submit", (event) => 
               })
     })
     .catch((err) => {
-      console.log(error)
     })
   }
-  console.log('123')
   event.preventDefault();
 });
