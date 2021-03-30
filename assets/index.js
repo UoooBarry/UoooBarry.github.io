@@ -20,7 +20,7 @@ document.getElementById("short-url-form").addEventListener("submit", (event) => 
                   document.querySelector('#result').innerHTML = redirectUrl
                   document.querySelector('#result').href = redirectUrl 
                 }else{
-                  document.querySelector('#result').innerHTML = 'Error happen when shoranting your url';
+                  document.querySelector('#result').innerHTML = 'Error happened when shorting your URL, please check the format, is it start with www or http/s ?';
                   document.querySelector('#result').style.color = 'red';
                 }
               })
