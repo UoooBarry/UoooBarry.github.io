@@ -18,7 +18,8 @@ document.getElementById("short-url-form").addEventListener("submit", (event) => 
                   const uuid = content.payload.uuid
                   const redirectUrl = `${SERVER_ADDRESS}/redirect/${uuid}`
                   document.querySelector('#result').innerHTML = redirectUrl
-                  document.querySelector('#result').href = redirectUrl 
+                  document.querySelector('#result').href = redirectUrl
+                  new QRCode(document.getElementById("qrcode"), redirectUrl);
                 }else{
                   document.querySelector('#result').innerHTML = 'Error happened when shorting your URL, please check the format, is it start with www or http/s ?';
                   document.querySelector('#result').style.color = 'red';
