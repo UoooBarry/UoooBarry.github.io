@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d0aa458c.chunk.css",
+    "main.js": "/static/js/main.20bd46c9.chunk.js",
+    "main.js.map": "/static/js/main.20bd46c9.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.352f048c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.352f048c.js.map",
+    "static/js/2.68ee0a40.chunk.js": "/static/js/2.68ee0a40.chunk.js",
+    "static/js/2.68ee0a40.chunk.js.map": "/static/js/2.68ee0a40.chunk.js.map",
+    "static/js/3.5b7b229b.chunk.js": "/static/js/3.5b7b229b.chunk.js",
+    "static/js/3.5b7b229b.chunk.js.map": "/static/js/3.5b7b229b.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.d0aa458c.chunk.css.map": "/static/css/main.d0aa458c.chunk.css.map",
+    "static/js/2.68ee0a40.chunk.js.LICENSE.txt": "/static/js/2.68ee0a40.chunk.js.LICENSE.txt",
+    "static/media/paper.17707fe4.svg": "/static/media/paper.17707fe4.svg",
+    "static/media/rock.bb112ecc.svg": "/static/media/rock.bb112ecc.svg",
+    "static/media/scissor.634156ac.svg": "/static/media/scissor.634156ac.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.352f048c.js",
+    "static/js/2.68ee0a40.chunk.js",
+    "static/css/main.d0aa458c.chunk.css",
+    "static/js/main.20bd46c9.chunk.js"
+  ]
+}
